@@ -397,12 +397,12 @@ main::-webkit-scrollbar {
 
 .horizontal-video__title--top {
   opacity: 1;
-  top: -30%;
+  top: 5%;
   transform: translateY(0);
 }
 
 .horizontal-video__title--bottom {
-  bottom: -10.5%;
+  bottom: 10.5%;
   opacity: 1;
   transform: translateY(0);
 }
@@ -786,8 +786,8 @@ main::-webkit-scrollbar {
 
 /* Hover effect for links */
 .horizontal-nav__link:hover {
-  background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
-  color: #aeffec; /* Change color on hover */
+  transform: translateY(5px);
+  transition: ease 0.3s;
 }
 
 /* Number indicator styling */
@@ -816,7 +816,7 @@ main::-webkit-scrollbar {
     255,
     0.2
   ); /* Background of the progress bar */
-  border-radius: 25px 25px 0 0; /* Rounded corners at the top */
+  /* border-radius: 0 0 25px 25px; Rounded corners at the top */
   margin-bottom: 0.5rem; /* Space between the bar and the links */
 }
 
@@ -824,14 +824,15 @@ main::-webkit-scrollbar {
   background-color: #aeffec; /* Color of the progress bar */
   height: 100%;
   width: 0; /* Start width (will be adjusted by JavaScript) */
-  transition: width 0.5s ease-in-out;
+  transition: width 0.2s ease;
+  /* transition: ease 0.3s; */
 }
 
 /* Raised text effect for the current page item */
 .horizontal-nav__item.active .horizontal-nav__link {
   color: #aeffec; /* Highlight color for the text */
   position: relative; /* For positioning the raised effect */
-  transform: translateY(-5px); /* Raise the text */
+  transform: translateY(10px); /* Raise the text */
 }
 
 /* Responsive adjustments */
