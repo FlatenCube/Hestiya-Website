@@ -108,7 +108,7 @@ main::-webkit-scrollbar {
 
 .horizontal-header__link {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   width: 155px;
 }
 
@@ -120,7 +120,7 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-header__link a .horizontal-header__link-static {
-  left: 50%;
+  left: 25%;
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -585,9 +585,9 @@ main::-webkit-scrollbar {
   width: 100%;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   font-family: "raleway";
-  src: url(fonts/raleway-regular.woff2') format('woff2');
-  font-weight: regula;
-  font-style: normal;
+  src: url("fonts/raleway-regular.woff2");
+  font-weight: "regular";
+  font-style: "normal";
   color: #fff;
 }
 
