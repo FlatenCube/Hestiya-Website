@@ -1049,7 +1049,8 @@ html {
 
 body {
   color: #011c22;
-  font-family: instrument sans, sans-serif;
+  font-family: 'Raleway', sans-serif; /* Raleway for headings */
+  font-weight: 500; /* Normal weight for headings */
   font-size: 16px;
   letter-spacing: 0.15px;
   line-height: 22px;

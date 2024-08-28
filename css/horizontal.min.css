@@ -50,6 +50,8 @@ main::-webkit-scrollbar {
 .horizontal-section {
   align-items: center;
   background-color: #004d00;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Increased opacity to 0.2 */
+  background-size: 30px 30px; /* Adjust size for desired effect */
   color: #f5f5f5;
   display: flex;
   gap: 3.75rem;
@@ -59,6 +61,7 @@ main::-webkit-scrollbar {
   position: relative;
   width: max-content;
 }
+
 
 .hs_cos_wrapper_type_module:last-child .horizontal-section {
   padding-right: 15vw;
@@ -336,7 +339,7 @@ main::-webkit-scrollbar {
 
 .horizontal-headline-100 {
   font-size: clamp(4rem, -4.9302rem + 18.6047vw, 16rem);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -6px;
   line-height: 1;
   margin: 1rem 0;
@@ -357,7 +360,7 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-headline-350 {
-  font-size: clamp(1.5rem, -0.7619rem + 4.7619vw, 4rem);
+  font-size: clamp(1.25rem, -0.5rem + 4vw, 3.5rem);
   font-weight: 400;
   line-height: 1;
   margin: 1rem 0;
@@ -383,16 +386,14 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-video__title {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   position: absolute;
   text-align: center;
   transition: all 0.5s ease-in-out;
   width: 100%;
   z-index: 2;
-  font-family: "raleway";
-  src: url("fonts/raleway-bold.woff2");
-  font-weight: regula;
-  font-style: normal;
+  font-family: 'Raleway', sans-serif; /* Raleway for headings */
+  font-weight: 400; /* Normal weight for headings */
 }
 
 .horizontal-video__title--top {
@@ -1044,3 +1045,42 @@ main::-webkit-scrollbar {
 .footer ul li a:hover {
   text-decoration: underline;
 }
+
+#xw4ofcfrxfQ1tmvM {
+  height: 50%; /* Adjust the height as needed */
+}
+
+#hW1xTlCmHxa0fWje {
+  height: 50%; /* Adjust the height as needed */
+}
+
+#YFyO8nkeux3nMTF8 {
+  height: 50%; /* Adjust the height as needed */
+}
+
+#fYGUceRucIaIMQrp {
+  height: 50%; /* Adjust the height as needed */
+}
+
+.animation_container {
+  height: 50%; /* Adjust the height as needed */
+}
+
+.animated {
+  height: 50%; /* Adjust the height as needed */
+}
+
+svg {
+  height: 50%; /* Adjust the height as needed */
+}
+
+#XmEcIyU6ysAXMrqf {
+  font-size: 0.8em; /* Reduce font size */
+}
+
+#YqLbfGuOXdzaFtPg {
+  height: 50%; /* Adjust the height as needed */
+}
+
+
+
