@@ -95,7 +95,6 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-header {
-  mix-blend-mode: difference;
   padding: 1rem 2rem;
   position: fixed;
   width: 100vw;
@@ -229,8 +228,7 @@ main::-webkit-scrollbar {
   color: white;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   margin: 2rem 0;
-  font-family: "raleway";
-  src: url("fonts/raleway-bold.woff2");
+  font-family: 'Raleway', sans-serif;
   font-weight: regular;
   font-style: normal;
 }
@@ -354,14 +352,14 @@ main::-webkit-scrollbar {
 
 .horizontal-headline-300 {
   font-size: clamp(2rem, 1.7391rem + 1.3913vw, 4rem);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
   margin: 1rem 0;
 }
 
 .horizontal-headline-350 {
-  font-size: clamp(1.25rem, -0.5rem + 4vw, 3.5rem);
-  font-weight: 400;
+  font-size: clamp(1.3125rem, -0.525rem + 4.2vw, 3.675rem);
+  font-weight: 500;
   line-height: 1;
   margin: 1rem 0;
 }
@@ -393,7 +391,8 @@ main::-webkit-scrollbar {
   width: 100%;
   z-index: 2;
   font-family: 'Raleway', sans-serif; /* Raleway for headings */
-  font-weight: 400; /* Normal weight for headings */
+  font-weight: 500; /* Normal weight for headings */
+  font-size: 3rem;
 }
 
 .horizontal-video__title--top {
@@ -605,6 +604,7 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-toggle-text__button {
+  visibility: hidden;
   background: transparent;
   border: none;
   color: #fff;
@@ -740,11 +740,9 @@ main::-webkit-scrollbar {
   display: flex;
   position: fixed;
   width: 100vw; /* Full width */
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
   border-radius: 25px;
   /* padding: 0.8rem; Padding around the navbar */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  mix-blend-mode: difference;
   z-index: 100;
   overflow: hidden;
   align-items: center;
@@ -781,6 +779,7 @@ main::-webkit-scrollbar {
   border-radius: 25px;
   transition: background-color 0.3s, color 0.3s;
   font-family: "Raleway", sans-serif; /* Apply the Raleway font */
+  font-weight: 400;
   text-transform: uppercase; /* Convert all link text to uppercase */
   position: relative; /* For positioning the raised effect */
 }
@@ -822,19 +821,21 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-nav__line {
-  background-color: #aeffec; /* Color of the progress bar */
+  background-color: #6B8E23; /* Color of the progress bar */
   height: 100%;
   width: 0; /* Start width (will be adjusted by JavaScript) */
   transition: width 0.2s ease;
   /* transition: ease 0.3s; */
 }
 
-/* Raised text effect for the current page item */
+/* Raised text effect for the current page item with a subtle glow */
 .horizontal-nav__item.active .horizontal-nav__link {
-  color: #aeffec; /* Highlight color for the text */
+  color: #fff; /* Highlight color for the text */
   position: relative; /* For positioning the raised effect */
   transform: translateY(10px); /* Raise the text */
+  text-shadow: 0 0 4px rgba(143, 188, 143, 0.6), 0 0 10px rgba(143, 188, 143, 0.4); /* Subtle glow effect */
 }
+
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
@@ -1080,6 +1081,23 @@ svg {
 
 #YqLbfGuOXdzaFtPg {
   height: 50%; /* Adjust the height as needed */
+}
+
+@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait),
+       (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+    header, footer {
+        height: 60px; /* Adjust height as needed */
+    }
+
+    /* Ensure the side-scrolling container fits the viewport */
+    .horizontal-container {
+        padding: 0; /* Remove padding to avoid content cutoff */
+    }
+
+    .horizontal-section {
+        width: 100vw; /* Full viewport width for each section */
+    }
 }
 
 

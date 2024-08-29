@@ -1066,7 +1066,7 @@ body {
 .bold,
 b,
 strong {
-  font-family: instrument sans medium, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 html[lang^="ja"] body,
@@ -1242,7 +1242,7 @@ hr {
 .btn {
   cursor: pointer;
   display: inline-block;
-  font-family: Montserrat, sans-serif; /* Aligning with your Hestiya website's font */
+  font-family: 'Raleway', sans-serif; /* Aligning with your Hestiya website's font */
   letter-spacing: 0.32px;
   line-height: 26px;
   opacity: 1;
@@ -1289,7 +1289,7 @@ form label {
 
 .hs-form-booleancheckbox-display,
 .hs-form-checkbox label {
-  font-family: instrument sans, sans-serif;
+  font-family: 'Raleway'', sans-serif;
   margin-bottom: 0;
   text-transform: none;
 }
@@ -1406,7 +1406,7 @@ form .hs-button {
   border: none;
   color: #fff;
   color: #011c22;
-  font-family: instrument sans medium, sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: 48px;
   padding: 1px 0 0 25px;
   text-transform: uppercase;
@@ -1622,7 +1622,7 @@ form .hs-richtext img {
 
 .hs-error-msg {
   color: #011c22;
-  font-family: instrument sans, sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 12px;
   margin-top: 12px;
   text-transform: none;
