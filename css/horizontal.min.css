@@ -1047,58 +1047,163 @@ main::-webkit-scrollbar {
   text-decoration: underline;
 }
 
-#xw4ofcfrxfQ1tmvM {
-  height: 50%; /* Adjust the height as needed */
+/* Button Styles */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: Montserrat, sans-serif; /* Aligning with your Hestiya website's font */
+  letter-spacing: 0.32px;
+  line-height: 26px;
+  opacity: 1;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.1s ease-in-out;
+  border-radius: 10px; /* Slightly more rounded edges for a modern look */
+  background-color: #003300; /* Deep dark green */
+  color: #fff; /* White text */
+  padding: 8px 15px; /* Adjusted padding for better spacing */
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#hW1xTlCmHxa0fWje {
-  height: 50%; /* Adjust the height as needed */
+/* Icon Styles within Button */
+.btn img {
+  display: block;
+  max-width: 40px; /* Set maximum width for icons */
+  max-height: 40px; /* Set maximum height for icons */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
 }
 
-#YFyO8nkeux3nMTF8 {
-  height: 50%; /* Adjust the height as needed */
+/* Hover Effect */
+.btn:hover {
+  background-color: #004d00; /* Slightly lighter shade of green */
+  color: #ffffff; /* Ensure text stays white */
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.5), 0 5px 15px rgba(0, 0, 0, 0.2); /* Inner glow and slight shadow for depth */
+  transform: translateY(-3px); /* Subtle lift effect */
 }
 
-#fYGUceRucIaIMQrp {
-  height: 50%; /* Adjust the height as needed */
+/* Click Effect */
+.btn:active {
+  transform: translateY(1px) scale(0.98); /* Slight press effect */
+  box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.7), 0 3px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on click */
 }
 
-.animation_container {
-  height: 50%; /* Adjust the height as needed */
+/* Title Styles */
+.horizontal-text-columns__column-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
 }
 
-.animated {
-  height: 50%; /* Adjust the height as needed */
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .btn {
+    font-size: 0.9rem; /* Slightly smaller text on tablets */
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+
+  .btn img {
+    max-width: 30px; /* Smaller icons for tablets */
+    max-height: 30px;
+  }
+
+  .horizontal-text-columns__column-title {
+    font-size: 1.3rem;
+  }
 }
 
-svg {
-  height: 50%; /* Adjust the height as needed */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.8rem; /* Smaller text on mobile */
+    padding: 7px 10px; /* Further adjust padding for mobile */
+  }
+
+  .btn img {
+    max-width: 25px; /* Smaller icons for mobile */
+    max-height: 25px;
+  }
+
+  .horizontal-text-columns__column-title {
+    font-size: 1.2rem;
+  }
 }
 
-#XmEcIyU6ysAXMrqf {
-  font-size: 0.8em; /* Reduce font size */
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+    min-width: 180px; /* Adjust min-width for tablets */
+  }
 }
 
-#YqLbfGuOXdzaFtPg {
-  height: 50%; /* Adjust the height as needed */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 7px 10px;
+    min-width: 160px; /* Adjust min-width for mobile */
+  }
 }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait),
-       (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-
-    header, footer {
-        height: 60px; /* Adjust height as needed */
-    }
-
-    /* Ensure the side-scrolling container fits the viewport */
-    .horizontal-container {
-        padding: 0; /* Remove padding to avoid content cutoff */
-    }
-
-    .horizontal-section {
-        width: 100vw; /* Full viewport width for each section */
-    }
+/* Span Styles for Text */
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
+.flex__center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px; /* Ensure proper spacing around text */
+}
+
+/* General button styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  /* Other button styles */
+}
+
+/* Styles specific to Follow Us buttons */
+.follow-us-btn {
+  background: none; /* Remove background */
+  padding: 5px; /* Adjust padding as needed */
+  border: none; /* Remove border if any */
+}
+
+.follow-us-btn img {
+  display: block; /* Ensure images are displayed as block elements */
+  max-width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s; /* Smooth resizing effect */
+}
+
+.follow-us-btn:hover img {
+  transform: scale(1.1); /* Slightly resize on hover */
+}
+
+/* Container to align buttons side by side */
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust space between buttons */
+}
+
+
+
+
+
+
+
+
+
 
 
 
