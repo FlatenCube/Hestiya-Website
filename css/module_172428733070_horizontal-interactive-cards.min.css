@@ -9,8 +9,10 @@
 }
 
 .horizontal-cards__intro-2 {
-  background-color: #fff;
-  color: #000;
+  background-color: #004d00;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Increased opacity to 0.2 */
+  background-size: 30px 30px; /* Adjust size for desired effect */
+  color: #fff;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -25,7 +27,9 @@
 }
 
 .horizontal-cards__track {
-  background-color: #fff;
+  background-color: #004d00;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Increased opacity to 0.2 */
+  background-size: 30px 30px; /* Adjust size for desired effect */
   display: flex;
   flex-wrap: nowrap;
   gap: 1rem;
@@ -69,7 +73,7 @@
 }
 
 .hcard__preview-title {
-  color: #000;
+  color: #fff;
   position: absolute;
 }
 

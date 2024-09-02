@@ -1209,6 +1209,26 @@ main::-webkit-scrollbar {
   gap: 10px; /* Adjust space between buttons */
 }
 
+.hcard__preview img {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.hcard__preview img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2);
+}
+
+/* Click animation */
+.hcard__preview img:active {
+  transform: scale(0.98); /* Slightly shrinks the image when clicked */
+  transition: transform 0.10s ease-in-out; /* Slightly longer transition for a smoother effect */
+}
+
+
+
+
+
 
 
 
