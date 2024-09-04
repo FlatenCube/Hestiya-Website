@@ -850,11 +850,11 @@ main::-webkit-scrollbar {
 
   .horizontal-nav__link {
     padding: 0.3rem 0.5rem; /* Reduced padding */
-    font-size: 0.9rem; /* Adjust font size */
+    font-size: 0.5rem; /* Adjust font size */
   }
 
   .horizontal-nav__num {
-    font-size: clamp(0.9rem, 0.7rem + 0.8vw, 1.6rem); /* Adjust font size */
+    font-size: clamp(0.72rem, 0.56rem + 0.64vw, 1.28rem); /* Reduced by 20% */
   }
 }
 
@@ -881,6 +881,10 @@ main::-webkit-scrollbar {
 
   .horizontal-nav__link {
     padding: 0.5rem 0;
+    font-size: 0.9rem; /* Adjust font size */
+  }
+  .horizontal-nav__num {
+    font-size: clamp(0.9rem, 0.7rem + 0.8vw, 1.6rem); /* Adjust font size */
   }
 }
 
