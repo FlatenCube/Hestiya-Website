@@ -1,4 +1,4 @@
-/* Hestiya-Website/main.min.css */
+/* Hestiya-Website/css/main.min.css */
 
 *,
 :after,
@@ -646,7 +646,7 @@ html {
 
 @media screen and (max-width: 767px) {
   .side-scroll-mobile {
-    margin-left: -20px;
+    /* margin-left: -20px; */
     padding-left: 20px;
     padding-right: 20px;
     width: calc(100% + 40px);
@@ -673,7 +673,7 @@ html {
 
 @media screen and (max-width: 900px) and (min-width: 768px) {
   .side-scroll-mobile {
-    margin-left: -40px;
+    margin-left: 10px;
     padding-left: 40px;
     padding-right: 40px;
     width: calc(100% + 80px);

@@ -214,8 +214,9 @@ main::-webkit-scrollbar {
 }
 
 .horizontal-hero__content-bottom {
-  text-align: right;
+  text-align: left;
   text-wrap: balance;
+  padding-left: 12px;
 }
 
 .horizontal-headline-hero {
@@ -224,7 +225,7 @@ main::-webkit-scrollbar {
   letter-spacing: -15px;
   line-height: 1;
   margin: 1rem 0;
-  text-align: right;
+  text-align: left;
   color: white;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   margin: 2rem 0;
@@ -720,8 +721,10 @@ main::-webkit-scrollbar {
   }
 
   .horizontal-text-columns__column {
-    align-items: center;
+    align-items: left;
     display: flex;
+    flex-direction: column;
+
   }
 
   .horizontal-text-columns__column-link {

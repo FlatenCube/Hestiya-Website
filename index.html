@@ -24,7 +24,7 @@
   <script src="js/otSDKStub.js" type="text/javascript" charset="UTF-8"
     data-domain-script="d483db78-6a54-4356-bc82-b37bc73af973"></script>
   <script type="text/javascript">
-    function OptanonWrapper() { }
+    function OptanonWrapper() {}
   </script>
   <!-- OneTrust Cookies Consent Notice end for hestiya.com -->
 
@@ -32,7 +32,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <script>hsjQuery = window['jQuery'];</script>
+  <script>
+    hsjQuery = window['jQuery'];
+  </script>
 
   <meta property="og:description"
     content="Hestiya, the climate fintech company, is a pioneering firm dedicated to revolutionising the global fight against climate change.  ">
@@ -110,10 +112,15 @@
     _hsp.push(['addPrivacyConsentListener', function (consent) {
       if (consent.allowed || (consent.categories && consent.categories.analytics)) {
         (function (i, s, o, g, r, a, m) {
-          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          i['GoogleAnalyticsObject'] = r;
+          i[r] = i[r] || function () {
             (i[r].q = i[r].q || []).push(arguments)
-          }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+          }, i[r].l = 1 * new Date();
+          a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
         ga('create', 'UA-100447394-1', 'auto');
         ga('send', 'pageview');
@@ -127,7 +134,10 @@
   <script>
     var _hsp = window._hsp = window._hsp || [];
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
 
     var useGoogleConsentModeV2 = true;
     var waitForUpdateMillis = 1000;
@@ -155,12 +165,18 @@
       }
 
       (function (w, d, s, l, i) {
-        w[l] = w[l] || []; w[l].push({
-          'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-        }); var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
       })(window, document, 'script', 'dataLayer', 'GTM-NTRH9C7');
 
       window._hsGtmLoadOnce = true;
@@ -171,7 +187,6 @@
         hsLoadGtm();
       }
     }]);
-
   </script>
 
   <!-- /Added by GoogleTagManager integration -->
@@ -272,8 +287,7 @@
         <div class="horizontal-header__content">
           <div class="horizontal-header__link horizontal-hide-mobile--flex">
             <a class="horizontal-anchor-link watch-film-button" href="#watch-film">
-              <svg
-                class="horizontal-header__link-static" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              <svg class="horizontal-header__link-static" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
                 viewBox="0 0 40 40" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40ZM28.6481 20.0404L15.6651 13.0785C15.6056 13.0469 15.503 13.0215 15.4355 13.0215C15.1683 13.0215 14.9512 13.2361 14.9512 13.5015V27.4258C14.9512 27.6906 15.1683 27.9052 15.4355 27.9052C15.5024 27.9052 15.6056 27.8792 15.6651 27.8475L28.6481 20.8876C28.7895 20.8131 28.9047 20.6227 28.9047 20.464C28.9047 20.3052 28.7895 20.1154 28.6481 20.0404Z"
@@ -296,7 +310,7 @@
             data-name="Hestiya Home">
 
             <div class="horizontal-hero__content">
-              <div class="horizontal-hero__content-top">  
+              <div class="horizontal-hero__content-top">
               </div>
               <div class="horizontal-hero__content-main">
                 <h1 class="horizontal-headline-hero">Hestiya</h1>
@@ -314,8 +328,8 @@
 
 
             <div class="horizontal-section__parallax-bg-wrapper">
-              <video class="horizontal-section__parallax-bg-image" src="media/Hestiya-hero-video_1920x1080_For_Website.mp4"
-                autoplay="" loop="" muted="" playsinline=""
+              <video class="horizontal-section__parallax-bg-image"
+                src="media/Hestiya-hero-video_1920x1080_For_Website.mp4" autoplay="" loop="" muted="" playsinline=""
                 poster="Poster_Image.png"></video>
             </div>
 
@@ -340,7 +354,8 @@
                 <h2 class="horizontal-video__title horizontal-video__title--top horizontal-headline-200"></h2>
 
                 <video id="main-video" playsinline="">
-                  <source src="media/HESTIYA_PROFILE_For_Website.mp4" type="video/mp4">Your browser does not support HTML video.
+                  <source src="media/HESTIYA_PROFILE_For_Website.mp4" type="video/mp4">Your browser does not support
+                  HTML video.
                 </video>
                 <div class="play-button" id="play-button"><svg width="170" height="170" viewBox="0 0 170 170"
                     fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -360,13 +375,14 @@
               <span style="padding-left: 80%;">
 
                 <img src="hestiya-final-logo.svg" width="55" height="55" alt="hestiya-final-logo.svg">
-                  
+
               </span>
 
-              <p class="horizontal-toggle-text__visible-text" style="font-size: 1.75rem; font-weight: medium; padding: 20px 0; color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); text-align: left;">
+              <p class="horizontal-toggle-text__visible-text"
+                style="font-size: 1.75rem; font-weight: medium; padding: 20px 0; color: #ffffff; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); text-align: left;">
                 Helping Reverse Climate Change.
               </p>
-              
+
               <button class="horizontal-toggle-text__button horizontal-hide-mobile"><span
                   class="toggle-button-show">Read more</span><span class="toggle-button-hide">Show less</span> <svg
                   width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -375,12 +391,12 @@
                     fill="white"></path>
                 </svg></button>
 
-                <a href="#ocean-conservation"
+              <a href="#ocean-conservation"
                 class="horizontal-anchor-link horizontal-anchor-link--no-mask horizontal-scroll-btn"
                 style="display: block; margin-top: 10px; text-decoration: none;">
                 <p style="margin: 0;">Scroll to explore more <span class="horizontal-hero__arrow">→</span></p>
-             </a>
-             
+              </a>
+
 
             </div>
 
@@ -397,75 +413,75 @@
           <section id="ocean-conservation" name="ocean-conservation" data-anchor="ocean-conservation"
             class="horizontal-section " data-name="Hestiya's Core">
 
-              <div class="horizontal-section__col horizontal-title">
-                <h2 class="horizontal-headline-100">
-                  <span class="horizontal-title__row">
-                    <span class="horizontal-title__span">
-                      How ?
-                    </span>
+            <div class="horizontal-section__col horizontal-title">
+              <h2 class="horizontal-headline-100">
+                <span class="horizontal-title__row">
+                  <span class="horizontal-title__span">
+                    How ?
                   </span>
-                </h2>
-              </div>
+                </span>
+              </h2>
+            </div>
 
-              <div class="horizontal-section__col vertical-marquee">
-                <div class="vertical-marquee__content">
-                  <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
-                  <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
-                  <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
-                  <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
-                  <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
-                  <!--
+            <div class="horizontal-section__col vertical-marquee">
+              <div class="vertical-marquee__content">
+                <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
+                <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
+                <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
+                <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
+                <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya&nbsp;—&nbsp;</h3>
+                <!--
               <h3 class="vertical-marquee__item horizontal-headline-300">Hestiya — </h3>
               -->
-                </div>
               </div>
+            </div>
 
-              <div class="horizontal-section__col horizontal-list">
-                <div class="horizontal-list__track">
-                  <ul class="horizontal-list__content">
-                    <li class="horizontal-list__item">
-                      <h3 class="horizontal-list__item-title horizontal-headline-300">
-                        <span>
-                          1. Channeling a Trillion Dollars towards Climate Finance.
-                        </span>
-                      </h3>
-                      <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
-                    </li>
-                    <li class="horizontal-list__item">
-                      <h3 class="horizontal-list__item-title horizontal-headline-300">
-                        <span>
-                          2. World's Most Efficient Carbon Credit Market.
-                        </span>
-                      </h3>
-                      <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
-                    </li>
-                    <li class="horizontal-list__item">
-                      <h3 class="horizontal-list__item-title horizontal-headline-300">
-                        <span>
-                          3. Democratizing Climate Finance.
-                        </span>
-                      </h3>
-                      <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
-                    </li>
-                    <li class="horizontal-list__item">
-                      <h3 class="horizontal-list__item-title horizontal-headline-300">
-                        <span>
-                          4. Blockchain Technology for Transparency in Climate Markets.
-                        </span>
-                      </h3>
-                      <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
-                    </li>
-                    <li class="horizontal-list__item">
-                      <h3 class="horizontal-list__item-title horizontal-headline-300">
-                        <span>
-                          5. Governance through Smart Contracts.
-                        </span>
-                      </h3>
-                      <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
-                    </li>
-                  </ul>
-                </div>
+            <div class="horizontal-section__col horizontal-list">
+              <div class="horizontal-list__track">
+                <ul class="horizontal-list__content">
+                  <li class="horizontal-list__item">
+                    <h3 class="horizontal-list__item-title horizontal-headline-300">
+                      <span>
+                        1. Channeling a Trillion Dollars towards Climate Finance.
+                      </span>
+                    </h3>
+                    <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
+                  </li>
+                  <li class="horizontal-list__item">
+                    <h3 class="horizontal-list__item-title horizontal-headline-300">
+                      <span>
+                        2. World's Most Efficient Carbon Credit Market.
+                      </span>
+                    </h3>
+                    <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
+                  </li>
+                  <li class="horizontal-list__item">
+                    <h3 class="horizontal-list__item-title horizontal-headline-300">
+                      <span>
+                        3. Democratizing Climate Finance.
+                      </span>
+                    </h3>
+                    <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
+                  </li>
+                  <li class="horizontal-list__item">
+                    <h3 class="horizontal-list__item-title horizontal-headline-300">
+                      <span>
+                        4. Blockchain Technology for Transparency in Climate Markets.
+                      </span>
+                    </h3>
+                    <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
+                  </li>
+                  <li class="horizontal-list__item">
+                    <h3 class="horizontal-list__item-title horizontal-headline-300">
+                      <span>
+                        5. Governance through Smart Contracts.
+                      </span>
+                    </h3>
+                    <p class="horizontal-list__item-text horizontal-hide-mobile"></p>
+                  </li>
+                </ul>
               </div>
+            </div>
 
 
             <div class="horizontal-section__col horizontal-title">
@@ -495,7 +511,7 @@
                         P.E Model - People for Earth
                         <img src="images/people.png" alt="People image">
                       </span>
-                    </h3>                  
+                    </h3>
                   </li>
                 </ul>
               </div>
@@ -528,12 +544,15 @@
               </div>
             </div>
 
-          </section></div>
+          </section>
+        </div>
 
-          <div id="hs_cos_wrapper_module_17204732603672" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+        <div id="hs_cos_wrapper_module_17204732603672"
+          class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
+          data-hs-cos-general-type="widget" data-hs-cos-type="module">
           <section id="ocean-monitoring" class="horizontal-cards horizontal-section" data-name="Partnerships">
 
-          
+
             <div class="logo-carousel-container">
               <div class="title-container">
                 <h2 class="title">
@@ -605,36 +624,6 @@
                       <p class="logo-name">Seej Fashion</p>
                     </a>
                   </div>
-                   <div class="logo-carousel__item">
-                    <a href="https://www.peerdrinks.com/" target="_blank" class="logo-link">
-                      <img src="images/Peer.jpg" alt="Peer-Drinks-Logo">
-                      <p class="logo-name">Peer Drinks</p>
-                    </a>
-                  </div>
-                  <div class="logo-carousel__item">
-                    <a href="https://lyallpuremporium.com/" target="_blank" class="logo-link">
-                      <img src="images/lyaalpur1.jpg" alt="Lyallpur-Emporium-Logo">
-                      <p class="logo-name">Lyallpur Emporium</p>
-                    </a>
-                  </div>
-                  <div class="logo-carousel__item">
-                    <a href="https://theyindia.com/" target="_blank" class="logo-link">
-                      <img src="images/TheyIndia1.jpg" alt="They-India-Logo">
-                      <p class="logo-name">They India</p>
-                    </a>
-                  </div>
-                  <div class="logo-carousel__item">
-                    <a href="https://www.c2cimporters.com/" target="_blank" class="logo-link">
-                      <img src="images/C2C1.jpg" alt="C2C-Importers-Logo">
-                      <p class="logo-name">C2C Importers</p>
-                    </a>
-                  </div>
-                  <div class="logo-carousel__item">
-                    <a href="https://seejfashion.com/" target="_blank" class="logo-link">
-                      <img src="images/seej1.png" alt="Seej-Fashion-Logo">
-                      <p class="logo-name">Seej Fashion</p>
-                    </a> 
-                  </div>
                   <div class="logo-carousel__item">
                     <a href="https://www.peerdrinks.com/" target="_blank" class="logo-link">
                       <img src="images/Peer.jpg" alt="Peer-Drinks-Logo">
@@ -665,7 +654,7 @@
                       <p class="logo-name">Seej Fashion</p>
                     </a>
                   </div>
-                   <div class="logo-carousel__item">
+                  <div class="logo-carousel__item">
                     <a href="https://www.peerdrinks.com/" target="_blank" class="logo-link">
                       <img src="images/Peer.jpg" alt="Peer-Drinks-Logo">
                       <p class="logo-name">Peer Drinks</p>
@@ -693,16 +682,46 @@
                     <a href="https://seejfashion.com/" target="_blank" class="logo-link">
                       <img src="images/seej1.png" alt="Seej-Fashion-Logo">
                       <p class="logo-name">Seej Fashion</p>
-                    </a> 
+                    </a>
+                  </div>
+                  <div class="logo-carousel__item">
+                    <a href="https://www.peerdrinks.com/" target="_blank" class="logo-link">
+                      <img src="images/Peer.jpg" alt="Peer-Drinks-Logo">
+                      <p class="logo-name">Peer Drinks</p>
+                    </a>
+                  </div>
+                  <div class="logo-carousel__item">
+                    <a href="https://lyallpuremporium.com/" target="_blank" class="logo-link">
+                      <img src="images/lyaalpur1.jpg" alt="Lyallpur-Emporium-Logo">
+                      <p class="logo-name">Lyallpur Emporium</p>
+                    </a>
+                  </div>
+                  <div class="logo-carousel__item">
+                    <a href="https://theyindia.com/" target="_blank" class="logo-link">
+                      <img src="images/TheyIndia1.jpg" alt="They-India-Logo">
+                      <p class="logo-name">They India</p>
+                    </a>
+                  </div>
+                  <div class="logo-carousel__item">
+                    <a href="https://www.c2cimporters.com/" target="_blank" class="logo-link">
+                      <img src="images/C2C1.jpg" alt="C2C-Importers-Logo">
+                      <p class="logo-name">C2C Importers</p>
+                    </a>
+                  </div>
+                  <div class="logo-carousel__item">
+                    <a href="https://seejfashion.com/" target="_blank" class="logo-link">
+                      <img src="images/seej1.png" alt="Seej-Fashion-Logo">
+                      <p class="logo-name">Seej Fashion</p>
+                    </a>
                   </div>
                 </div>
               </div>
-            </div> 
-          </section>
-            
-            <div class="horizontal-section__col horizontal-image_and_text horizontal-hide-mobile">
             </div>
-          
+          </section>
+
+          <div class="horizontal-section__col horizontal-image_and_text horizontal-hide-mobile">
+          </div>
+
         </div>
         <div id="hs_cos_wrapper_module_17204732160831"
           class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
@@ -711,7 +730,7 @@
             data-name="Founder's Story">
             <h2 style="font-weight: 500; font-size: 4rem;">Founder's Story</h2>
             <img src="images/Hestiya_Founders_Story_3.png" alt="images/Hestiya_Founders_Story_3.png">
-              
+
             <div class="horizontal-section__col horizontal-title">
               <h2 class="horizontal-headline-100">
                 <span class="horizontal-title__row">
@@ -740,13 +759,13 @@
 
                   <span class="horizontal-title__span">
 
-                    Make 
+                    Make
 
                   </span>
 
                   <span class="horizontal-title__span">
 
-                  A
+                    A
 
                   </span>
 
@@ -756,7 +775,7 @@
 
                   <span class="horizontal-title__span">
 
-                   Difference 
+                    Difference
 
                   </span>
 
@@ -764,16 +783,18 @@
 
                 <span class="horizontal-title__row">
 
-                  <span class="horizontal-title__span " style="font-size: 7.5rem;"> <!-- Increased by 400% -->
+                  <span class="horizontal-title__span " style="font-size: 7.5rem;">
+                    <!-- Increased by 400% -->
                     with
                   </span>
-                
-                  <span class="horizontal-title__span" style="font-size: 7.5rem;"> <!-- Increased by 400% -->
+
+                  <span class="horizontal-title__span" style="font-size: 7.5rem;">
+                    <!-- Increased by 400% -->
                     Hestiya
                   </span>
-                
+
                 </span>
-             
+
               </h2>
             </div>
 
@@ -782,34 +803,38 @@
               <div class="horizontal-text-columns__columns">
 
                 <div class="horizontal-text-columns__column">
-                  <h3 class="horizontal-text-columns__column-title" style="font-weight: 600;">Whitepaper</h3
-                  <p class="horizontal-text-columns__column-text horizontal-hide-mobile">Access our Whitepaper to delve into our comprehensive strategy and vision. Discover detailed insights and dynamic
-                    overviews that showcase our approach and investment potential for reversing climate change.</p>
-                  <a href="https://hestiya.gitbook.io/hestiya-whitepaper" target="_blank" class="btn btn__white uppercase">
+                  <h3 class="horizontal-text-columns__column-title" style="font-weight: 600;">Whitepaper</h3 <p
+                    class="horizontal-text-columns__column-text horizontal-hide-mobile">Access our Whitepaper to delve
+                  into our comprehensive strategy and vision. Discover detailed insights and dynamic
+                  overviews that showcase our approach and investment potential for reversing climate change.</p>
+                  <a href="https://hestiya.gitbook.io/hestiya-whitepaper" target="_blank"
+                    class="btn btn__white uppercase">
                     <span class="flex flex__center" data-text="Explore Deck →">Explore Whitepaper →</span>
                   </a>
                 </div>
-               
-              <div class="horizontal-text-columns__column">
+
+                <div class="horizontal-text-columns__column">
                   <h3 class="horizontal-text-columns__column-title" style="font-weight: 600;">Follow us</h3>
-              
-                  <div id="social-icon-wrapper" class="horizontal-text-columns__column" style="display: flex; flex-direction: row; gap: 1rem;">
-                    <a href="https://www.instagram.com/hestiyaforearth/?utm_source=ig_web_button_share_sheet" class="follow-us-btn">
+
+                  <div id="social-icon-wrapper" class="horizontal-text-columns__column"
+                    style="display: flex; flex-direction: row; gap: 1rem;">
+                    <a href="https://www.instagram.com/hestiyaforearth/?utm_source=ig_web_button_share_sheet"
+                      class="follow-us-btn">
                       <img src="images/instagram.png" alt="Instagram Logo">
                     </a>
-                    
+
                     <a href="https://x.com/Hestiyaforearth" class="follow-us-btn">
                       <img src="images/twitter (1).png" alt="X Logo">
                     </a>
-                  
+
                     <a href="https://www.linkedin.com/company/hestiya/about/" class="follow-us-btn">
                       <img src="images/linkedin.png" alt="Linkedin Logo">
                     </a>
                   </div>
-                  
-              
+
+
                   <!-- Add more links with logos as needed -->
-              </div>              
+                </div>
                 <div class="horizontal-text-columns__column">
 
                   <h3 class="horizontal-text-columns__column-title" style="font-weight: 600;">Hestiya Champions</h3>
@@ -823,16 +848,17 @@
 
                 <div class="horizontal-text-columns__column">
                   <h3 class="horizontal-text-columns__column-title" style="font-weight: 600;">Contact Us</h3>
-              
+
                   <p class="horizontal-text-columns__column-text horizontal-hide-mobile"></p>
-              
+
                   <!-- Button to open email app -->
-                  <a href="mailto:connect@hestiya.com?subject=Contact%20from%20Website&body=Hello%2C%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0A%0AThank%20you%2C%0A[Your%20Name]" class="btn">
+                  <a href="mailto:connect@hestiya.com?subject=Contact%20from%20Website&body=Hello%2C%0A%0AI%20would%20like%20to%20get%20in%20touch%20with%20you.%0A%0AThank%20you%2C%0A[Your%20Name]"
+                    class="btn">
                     Get in Touch
-                </a>
-                
+                  </a>
+
                 </div>
-             
+
 
               </div>
             </div>
@@ -863,11 +889,11 @@
     <footer class="footer">
       <div class="footer-content">
         <p>&copy; 2024 Hestiya. All rights reserved.</p>
-        </div>
+      </div>
     </footer>
   </div>
 
-  
+
 
   <!-- HubSpot performance collection script -->
   <script defer="" src="js/embed.js"></script>
@@ -888,7 +914,8 @@
   <script src="js/CustomEase.min.js"></script>
   <script src="js/lenis.min.js"></script>
   <script>
-    var hsVars = hsVars || {}; hsVars['language'] = 'en';
+    var hsVars = hsVars || {};
+    hsVars['language'] = 'en';
   </script>
 
   <script src="js/project.js"></script>
