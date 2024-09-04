@@ -4,10 +4,6 @@
   gap: 0;
 }
 
-.horizontal-cards__intro-1 {
-  padding-right: 5rem;
-}
-
 .horizontal-cards__intro-2 {
   background-color: #004d00;
   background-image: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1px, transparent 1px); /* Increased opacity to 0.2 */

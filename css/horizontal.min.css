@@ -1225,15 +1225,127 @@ main::-webkit-scrollbar {
   transition: transform 0.10s ease-in-out; /* Slightly longer transition for a smoother effect */
 }
 
+/* Title container at the top of the page */
+.title-container {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  text-align: center;
+  z-index: 10; /* Ensure the title stays on top */
+}
 
+.title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem; /* Adjust size as needed */
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
 
+/* Container for the logo carousel */
+.logo-carousel-container {
+  position: relative;
+  top: 80px; /* Adjust based on title height */
+  width: 50%;
+  height: calc(100vh - 80px); /* Adjust height to fill the rest of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
 
+/* Logo carousel setup */
+.logo-carousel {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
 
+.logo-carousel__track {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
 
+.logo-carousel__item {
+  flex: 0 0 auto;
+  margin-right: 50px; /* Space between logos */
+  width: 200px; /* Adjust logo size */
+  text-align: center;
+}
 
+.logo-carousel__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
 
+.logo-name {
+  font-family: 'Raleway', sans-serif;
+  color: #fff; /* Adjust text color if needed */
+  font-weight: bold;
+  margin-top: 10px; /* Space between logo and name */
+}
 
+/* Infinite scrolling animation */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
 
+/* Make the entire area clickable */
+.logo-link {
+  display: block; /* Make the entire area clickable */
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover and click effects */
+}
+
+/* Logo image */
+.logo-carousel__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Logo name */
+.logo-name {
+  font-family: 'Raleway', sans-serif;
+  color: #fff; /* Adjust text color if needed */
+  font-weight: bold;
+  margin-top: 10px; /* Space between logo and name */
+  text-align: center; /* Center the name */
+}
+
+/* Hover effect */
+.logo-link:hover {
+  transform: scale(0.9); /* Slightly enlarge the logo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+/* Click effect */
+.logo-link:active {
+  transform: scale(0.95); /* Slightly shrink the logo when clicked */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow */
+}
+
+.horizontal-cards.horizontal-section {
+  width: auto; /* Adjusts the width based on content */
+  max-width: 100%; /* Ensures it doesn't exceed the container */
+}
+
+.custom-width-section {
+  width: 1200px; /* Set the desired width */
+  max-width: 100%; /* Ensure it doesn't overflow the container */
+  margin: 0 auto; /* Center the section */
+  overflow: hidden; /* Hide any overflow content */
+}
 
 
 
