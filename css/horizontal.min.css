@@ -1271,7 +1271,7 @@ main::-webkit-scrollbar {
 
 .logo-carousel__track {
   display: flex;
-  animation: scroll 30s linear infinite;
+  animation: scroll 100s linear infinite; /* Slower scrolling */
 }
 
 .logo-carousel__item {
@@ -1279,13 +1279,14 @@ main::-webkit-scrollbar {
   margin-right: 50px; /* Space between logos */
   width: 200px; /* Adjust logo size */
   text-align: center;
+  transition: transform 0.6s ease, box-shadow 0.6s ease; /* Smooth hover and click effects */
 }
 
 .logo-carousel__item img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 8px; /* Rounded corners */
 }
 
 .logo-name {
@@ -1298,60 +1299,68 @@ main::-webkit-scrollbar {
 /* Infinite scrolling animation */
 @keyframes scroll {
   0% {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   100% {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
-}
-
-/* Make the entire area clickable */
-.logo-link {
-  display: block; /* Make the entire area clickable */
-  text-decoration: none; /* Remove default link underline */
-  color: inherit; /* Inherit text color */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover and click effects */
-}
-
-/* Logo image */
-.logo-carousel__item img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-}
-
-/* Logo name */
-.logo-name {
-  font-family: 'Raleway', sans-serif;
-  color: #fff; /* Adjust text color if needed */
-  font-weight: bold;
-  margin-top: 10px; /* Space between logo and name */
-  text-align: center; /* Center the name */
 }
 
 /* Hover effect */
-.logo-link:hover {
-  transform: scale(0.9); /* Slightly enlarge the logo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+.logo-carousel__item:hover {
+  transform: scale(1.05); /* Slightly enlarge the logo */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Deeper shadow for premium feel */
 }
 
 /* Click effect */
-.logo-link:active {
-  transform: scale(0.95); /* Slightly shrink the logo when clicked */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow */
+.logo-carousel__item:active {
+  transform: scale(1); /* Reset to normal size when clicked */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slightly reduce shadow */
+}
+/* Responsive adjustments for iPads and iPhones */
+@media (max-width: 1024px) {
+  .logo-carousel__item {
+    width: 120px;
+    margin-right: 15px;
+  }
+
+  .logo-carousel-container {
+    top: 60px; /* Adjust container height for better visibility */
+    height: calc(100vh - 60px);
+  }
+
+  .logo-carousel__track {
+    animation: scroll 120s linear infinite; /* Slower scroll for larger screens */
+  }
 }
 
+@media (max-width: 768px) {
+  .logo-carousel__item {
+    width: 100px; /* Smaller logos for mobile screens */
+    margin-right: 10px;
+  }
+
+  .logo-carousel-container {
+    top: 50px;
+    height: calc(100vh - 50px);
+  }
+
+  .logo-carousel__track {
+    animation: scroll 140s linear infinite; /* Further slow animation */
+  }
+}
+
+/* Horizontal cards section */
 .horizontal-cards.horizontal-section {
-  width: auto; /* Adjusts the width based on content */
-  max-width: 100%; /* Ensures it doesn't exceed the container */
+  width: auto;
+  max-width: 100%;
 }
 
 .custom-width-section {
-  width: 1200px; /* Set the desired width */
-  max-width: 100%; /* Ensure it doesn't overflow the container */
-  margin: 0 auto; /* Center the section */
-  overflow: hidden; /* Hide any overflow content */
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 #ocean-monitoring.horizontal-section {
@@ -1363,6 +1372,7 @@ main::-webkit-scrollbar {
   gap: 2rem;
   background-size: 20px 20px;
 }
+
   
 
 
